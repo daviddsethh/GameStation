@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="smartmenus/sm-core-css.css">
+    <link rel="stylesheet" href="smartmenus/sm-clean.css">
+    <title>GameStation Inc.</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="smartmenus/jquery.smartmenus.min.js"></script>
+    <script src="jquery.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+        body{    
+            background: #5C258D;
+            background: -webkit-linear-gradient(to right, #4389A2, #5C258D);
+            background: linear-gradient(to right, #4389A2, #5C258D);
+        }
+
+        #logo{
+            font-family: 'Comfortaa', cursive;
+            font-size: 10px;
+            font-weight: bold;
+        }
+
+        .greeting{
+            font-family: 'Comfortaa', cursive;
+            color: whitesmoke;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #main-menu{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 35px;
+            margin-left: 550px;
+            margin-right: 550px;  
+        }
+
+        .home-container{
+            font-family: 'Comfortaa', cursive;
+            text-align: center;
+            color: whitesmoke;
+            margin-top: 50px;
+            margin-bottom: 75px;
+        }
+
+        .about-details{
+            background-color: white;
+            color: black;
+            text-align: center;
+            height: 250px;
+            width: 500px;
+            padding: 25px 0 15px 0;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="logo">
+        <h1>GameStation Inc.</h1>
+    </div>
+    <ul id="main-menu" class="sm sm-clean">
+        <li>
+            <a href="/home.html">Home</a>
+        </li>
+        <li>
+            <a href="/details.html">Details</a>
+        </li>
+        <li>
+            <a href="/contact.html">Contact</a>
+        </li>
+        <li>
+            <a href="#">Gallery</a>
+            <ul>
+                <li>
+                    <a href="/gallery.html" target="_blank">Gallery</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <h1 class="greeting">Welcome!</h1>
+    <div class="home-container">
+        <img id="photo" src="/images/videogames1.jpg" alt="Video Games">
+        <figcaption id="caption">Video Games have come a long way. From 1958 - now, getting better as the years come!</figcaption>
+    </div>
+        <div class="about-details">
+            <h1>About Us</h1>
+            <p>
+                We are a company that deals with video games and random pictures.
+                If you would like to learn more about what we do, click the tabss
+                above and hopefully we will gain your business!
+            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="smartmenus/sm-core-css.css">
+    <link rel="stylesheet" href="smartmenus/sm-clean.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>GameStation Inc</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="smartmenus/jquery.smartmenus.min.js"></script>
+    <script src="jquery.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+        body{    
+            background: #5C258D;
+            background: -webkit-linear-gradient(to right, #4389A2, #5C258D);
+            background: linear-gradient(to right, #4389A2, #5C258D);
+        }
+
+        #logo{
+            font-family: 'Comfortaa', cursive;
+            font-size: 10px;
+            font-weight: bold;
+        }
+
+        #main-menu{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 35px;
+            margin-left: 550px;
+            margin-right: 550px;  
+        }
+
+        #info{
+            background-color: whitesmoke;
+            border: 1px solid black;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 200px;
+            margin-left: 650px;
+            margin-right: 650px;
+            color: black;
+        }
+
+        legend{
+            font-weight: bolder;
+            text-align: center;
+            font-size: 30px;
+            text-align: left;
+            color: blue;
+        }     
+        
+        #button{
+            background-color: green;
+            color: black;
+            font-size: 15px;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 5px;
+            cursor: pointer;
+         }
+
+         #icons{
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 45px;
+            font-size: 32px;
+         }
+
+         .fa-instagram:hover{
+            cursor: pointer;
+            color: #833ab4;
+         }
+
+         .fa-facebook:hover{
+            cursor: pointer;
+            color: blue;
+         }
+
+         .fa-twitter:hover{
+            cursor: pointer;
+            color:skyblue;
+         }
+    </style>
+
+</head>
+<body>
+    <div id="logo">
+        <h1>GameStation Inc.</h1>
+    </div>
+    <ul id="main-menu" class="sm sm-clean">
+        <li>
+            <a href="/home.html">Home</a>
+        </li>
+        <li>
+            <a href="/details.html">Details</a>
+        </li>
+        <li>
+            <a href="/contact.html">Contact</a>
+        </li>
+        <li>
+            <a href="">Gallery</a>
+            <ul>
+                <li>
+                    <a href="/gallery.html" target="_blank">Gallery</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <fieldset id="info"><legend>User Info</legend>
+        <form action="process.html" method="post" name="signup" id="signup">
+            <p>
+                <label for="name">Name:</label>
+                <input name="name" type="text" id="name" class="required" placeholder="Name" title="Please enter name!">
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input name="email" type="text" id="email" placeholder="Email" title="Please enter email!">
+            </p>
+            <p>
+                <label for="phone">Phone #:</label>
+                <input name="phone" type="number" id="phone" placeholder="Phone" title="Please enter phone number!">
+            </p>
+            <p>
+                <label for="subject">Subject:</label>
+                <input name="subject" type="text" id="subject" placeholder="Subject" title="Please enter a subject!">
+            </p>
+            <textarea name="message" cols="30" rows="10" id="message" placeholder="Message..." title="Please enter a message!"></textarea>
+            <p class="button">
+                <input type="submit" name="button" id="button" value="Submit">
+            </p>
+        </form>
+    </fieldset>
+    <footer id="icons">
+        <a id="icon1" href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a id="icon2" href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a id="icon3" href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+    </footer>
+</body>
+</html>

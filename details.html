@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link href="./CSS/_css/site.css" rel="stylesheet">
+    <link href="./CSS/_css/jquery-ui.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="smartmenus/sm-core-css.css">
+    <link rel="stylesheet" href="smartmenus/sm-clean.css">
+    <title>GameStation Inc.</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="smartmenus/jquery.smartmenus.min.js"></script>
+    <script src="jquery.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+        body{
+            background: #5C258D;
+            background: -webkit-linear-gradient(to right, #4389A2, #5C258D);
+            background: linear-gradient(to right, #4389A2, #5C258D);
+        }
+
+        #logo{
+            color: rose;
+            font-family: 'Comfortaa', cursive;
+            font-size: 10px;
+            font-weight: bold;
+        }
+
+        #main-menu{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 35px;
+            margin-left: 550px;
+            margin-right: 550px; 
+        }
+
+        .about-container{
+            font-family: 'Comfortaa', cursive;
+            text-align: center;
+            color: whitesmoke;
+            margin-top: 50px;
+            margin-bottom: 75px;
+        }
+
+        #tabContainer{
+            margin-left: 350px;
+            margin-right: 350px;
+            padding-bottom: 100px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="logo">
+        <h1>GameStation Inc.</h1>
+    </div>
+    <ul id="main-menu" class="sm sm-clean">
+        <li>
+            <a href="/home.html">Home</a>
+        </li>
+        <li>
+            <a href="/details.html">Details</a>
+        </li>
+        <li>
+            <a href="/contact.html">Contact</a>
+        </li>
+        <li>
+            <a href="#">Gallery</a>
+            <ul>
+                <li>
+                    <a href="/gallery.html" target="_blank">Gallery</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <div class="content">
+    <div class="main">
+        <h1 class="about-container">Video Game Details</h1>
+    
+        <div id="tabContainer">
+            <ul>
+                <li><a href="#panel1">Destiny 2</a></li>
+                <li><a href="#panel2">RuneScape</a></li>
+                <li><a href="#panel3">Halo 5</a></li>
+            </ul>
+    
+            <div id="panel1">
+                <h2>
+                    <img src="./images/destiny2tab.jpg" style="float: right; margin-left: 15px; margin-top: -33px; border-radius: 5px;" height="315" alt="guardian">Destiny 2: A Game in the Future
+                </h2>
+                <p class="paragraph">
+                    Destiny 2 is about a world where a "God" named the "Traveler", 
+                    gives power to soldiers called "Guardians" to face enemies and save the Traveler itself. 
+                    You have a companion called a "ghost" which floats around you and can revive you anytime you are downed.
+                    You also have abilities and can charge up to use a powerful move, called a "Super".
+                </p>
+            </div>
+    
+             <div id="panel2">
+                <h2>
+                    <img src="./images/runescapetab.webp" style="float: right; margin-left: 15px; margin-top: -69px; border-radius: 5px;" height="315" alt="gielinor">RuneScape: A Game in Medievil Times
+                </h2>
+                <p class="paragraph">
+                    RuneScape is a game set in the medievil times where dragons, magic, and knights are.
+                    You have 28 different skills to level up and hundreds of quests to do.
+                    It is an open world type game, where you have this huge map to explore. 
+                </p>
+            </div>
+    
+            <div id="panel3">
+                <h2>
+                    <img src="./images/halo5tab.jpg" style="float: right; margin-left: 15px; margin-top: -51px; border-radius: 5px;" height="315" alt="spartan">Halo 5: A Fast Paced FPS Game
+                </h2>
+                <p class="paragraph">
+                    Halo 5 is close to Destiny 2, as it is a game set in futuristic times.
+                    You play as an enhanced soldier known as "Spartans" and you fight aliens that are trying to destroy the world.
+                    Since being enhanced you are about 10ft tall and are super strong/fast and are incredibly hard to defeat.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
